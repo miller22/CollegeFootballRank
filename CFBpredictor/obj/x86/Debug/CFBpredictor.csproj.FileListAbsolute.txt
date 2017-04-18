@@ -20,3 +20,10 @@ C:\Users\Danny\CFBpredictor\obj\x86\Debug\CFBpredictor.csprojResolveAssemblyRefe
 C:\Users\Danny\CollegeFootballRank\CFBpredictor\obj\x86\Debug\CFBpredictor.csproj.ResolveComReference.cache
 C:\Users\Danny\CollegeFootballRank\CFBpredictor\obj\x86\Debug\CFBpredictor.exe
 C:\Users\Danny\CollegeFootballRank\CFBpredictor\obj\x86\Debug\CFBpredictor.pdb
+C:\Users\Danny\CollegeFootballRank\CFBpredictor\bin\Debug\CFBpredictor.exe
+C:\Users\Danny\CollegeFootballRank\CFBpredictor\bin\Debug\CFBpredictor.pdb
+C:\Users\Danny\CollegeFootballRank\CFBpredictor\obj\x86\Debug\CFBpredictor.csprojResolveAssemblyReference.cache
+C:\Users\Danny\CollegeFootballRank\CFBpredictor\obj\x86\Debug\CFBpredictor.Ranker.resources
+C:\Users\Danny\CollegeFootballRank\CFBpredictor\obj\x86\Debug\CFBpredictor.Properties.Resources.resources
+C:\Users\Danny\CollegeFootballRank\CFBpredictor\obj\x86\Debug\CFBpredictor.TeamForm.resources
+C:\Users\Danny\CollegeFootballRank\CFBpredictor\obj\x86\Debug\CFBpredictor.csproj.GenerateResource.Cache

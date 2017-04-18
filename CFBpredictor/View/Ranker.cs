@@ -87,123 +87,123 @@ namespace CFBpredictor
 
                     if (filter == Filter.NCAADivisionI)
                     {
-                        uxRankings.Items.Add(i + ". " + team.getTeamName() + " " + team.rating);
+                        uxRankings.Items.Add(i + ". " + team.GetTeamName() + " " + team.rating);
                         i++;
                     }
 
                     else if (filter == Filter.FBS)
                     {
-                        if (!team.getTeamConference().Equals("FCS"))
+                        if (!team.GetTeamConference().Equals("FCS"))
                         {
-                            uxRankings.Items.Add(i + ". " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ". " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.FCS)
                     {
-                        if (team.getTeamConference().Equals("FCS"))
+                        if (team.GetTeamConference().Equals("FCS"))
                         {
-                            uxRankings.Items.Add(i + ". " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ". " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.AAC)
                     {
-                        if (team.getTeamConference().Equals("AAC"))
+                        if (team.GetTeamConference().Equals("AAC"))
                         {
-                            uxRankings.Items.Add(i + ".(" + team.getFBSRank() + ") " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ".(" + team.GetFBSRank() + ") " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.ACC)
                     {
-                        if (team.getTeamConference().Equals("ACC"))
+                        if (team.GetTeamConference().Equals("ACC"))
                         {
-                            uxRankings.Items.Add(i + ".(" + team.getFBSRank() + ") " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ".(" + team.GetFBSRank() + ") " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.Big12)
                     {
-                        if (team.getTeamConference().Equals("Big 12"))
+                        if (team.GetTeamConference().Equals("Big 12"))
                         {
-                            uxRankings.Items.Add(i + ".(" + team.getFBSRank() + ") " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ".(" + team.GetFBSRank() + ") " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.BigTen)
                     {
-                        if (team.getTeamConference().Equals("Big Ten"))
+                        if (team.GetTeamConference().Equals("Big Ten"))
                         {
-                            uxRankings.Items.Add(i + ".(" + team.getFBSRank() + ") " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ".(" + team.GetFBSRank() + ") " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.CUSA)
                     {
-                        if (team.getTeamConference().Equals("CUSA"))
+                        if (team.GetTeamConference().Equals("CUSA"))
                         {
-                            uxRankings.Items.Add(i + ".(" + team.getFBSRank() + ") " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ".(" + team.GetFBSRank() + ") " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.Independent)
                     {
-                        if (team.getTeamConference().Equals("Independent"))
+                        if (team.GetTeamConference().Equals("Independent"))
                         {
-                            uxRankings.Items.Add(i + ".(" + team.getFBSRank() + ") " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ".(" + team.GetFBSRank() + ") " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.MAC)
                     {
-                        if (team.getTeamConference().Equals("MAC"))
+                        if (team.GetTeamConference().Equals("MAC"))
                         {
-                            uxRankings.Items.Add(i + ".(" + team.getFBSRank() + ") " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ".(" + team.GetFBSRank() + ") " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.MWC)
                     {
-                        if (team.getTeamConference().Equals("MWC"))
+                        if (team.GetTeamConference().Equals("MWC"))
                         {
-                            uxRankings.Items.Add(i + ".(" + team.getFBSRank() + ") " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ".(" + team.GetFBSRank() + ") " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.Pac12)
                     {
-                        if (team.getTeamConference().Equals("Pac 12"))
+                        if (team.GetTeamConference().Equals("Pac 12"))
                         {
-                            uxRankings.Items.Add(i + ".(" + team.getFBSRank() + ") " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ".(" + team.GetFBSRank() + ") " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.SEC)
                     {
-                        if (team.getTeamConference().Equals("SEC"))
+                        if (team.GetTeamConference().Equals("SEC"))
                         {
-                            uxRankings.Items.Add(i + ".(" + team.getFBSRank() + ") " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ".(" + team.GetFBSRank() + ") " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
 
                     else if (filter == Filter.SunBelt)
                     {
-                        if (team.getTeamConference().Equals("Sun Belt"))
+                        if (team.GetTeamConference().Equals("Sun Belt"))
                         {
-                            uxRankings.Items.Add(i + ".(" + team.getFBSRank() + ") " + team.getTeamName() + " " + team.rating);
+                            uxRankings.Items.Add(i + ".(" + team.GetFBSRank() + ") " + team.GetTeamName() + " " + team.rating);
                             i++;
                         }
                     }
@@ -225,7 +225,7 @@ namespace CFBpredictor
                             uxRankings.Items.Clear();
                             foreach (Team t in SOS)
                             {
-                                uxRankings.Items.Add(k + ". " + t.getTeamName());
+                                uxRankings.Items.Add(k + ". " + t.GetTeamName());
                                 k++;
                             }
                         }
@@ -240,19 +240,19 @@ namespace CFBpredictor
                             double low = 100;
                             foreach (Team t in ncaa.FBS)
                             {
-                                if (t.getPPGvsOppAvg() < low)
-                                    low = t.getPPGvsOppAvg();
+                                if (t.GetPPGvsOppAvg() < low)
+                                    low = t.GetPPGvsOppAvg();
                             }
 
                             foreach (Team t in ncaa.FBS)
                             {
-                                t.setOppAdjustedPPG(low);
+                                t.SetOppAdjustedPPG(low);
                             }
 
-                            List<Team> Offense = ncaa.FBS.OrderBy(o => o.getOppAdjustedPPG()).Reverse().ToList();
+                            List<Team> Offense = ncaa.FBS.OrderBy(o => o.GetOppAdjustedPPG()).Reverse().ToList();
                             foreach (Team t in Offense)
                             {
-                                uxRankings.Items.Add(k + ". " + t.getTeamName() + " (" + t.getOppAdjustedPPG() + ")");
+                                uxRankings.Items.Add(k + ". " + t.GetTeamName() + " (" + t.GetOppAdjustedPPG() + ")");
                                 k++;
                             }
                         }
@@ -266,19 +266,19 @@ namespace CFBpredictor
                             double high = -100;
                             foreach (Team t in ncaa.FBS)
                             {
-                                if (t.getDefensePPGvsOppAvg() > high)
-                                    high = t.getDefensePPGvsOppAvg();
+                                if (t.GetDefensePPGvsOppAvg() > high)
+                                    high = t.GetDefensePPGvsOppAvg();
                             }
 
                             foreach (Team t in ncaa.FBS)
                             {
-                                t.setOppAdjustedDPPG(high);
+                                t.SetOppAdjustedDPPG(high);
                             }
 
-                            List<Team> Defense = ncaa.FBS.OrderBy(o => o.getOppAdjustedDPPG()).Reverse().ToList();
+                            List<Team> Defense = ncaa.FBS.OrderBy(o => o.GetOppAdjustedDPPG()).Reverse().ToList();
                             foreach (Team t in Defense)
                             {
-                                uxRankings.Items.Add(k + ". " + t.getTeamName() + " (" + t.getOppAdjustedDPPG() + ")");
+                                uxRankings.Items.Add(k + ". " + t.GetTeamName() + " (" + t.GetOppAdjustedDPPG() + ")");
                                 k++;
                             }
                         }
@@ -297,90 +297,90 @@ namespace CFBpredictor
         {
             foreach (Team team in ncaa.FBS)
             {
-                if (scoreline[0].Equals(team.getTeamName()))
+                if (scoreline[0].Equals(team.GetTeamName()))
                 {
-                    team.increaseTotalPoints(Convert.ToInt32(scoreline[1]));
-                    team.increaseTotalPointsAllowed(Convert.ToInt32(scoreline[3]));
+                    team.IncreaseTotalPoints(Convert.ToInt32(scoreline[1]));
+                    team.IncreaseTotalPointsAllowed(Convert.ToInt32(scoreline[3]));
                     if (Convert.ToInt32(scoreline[1]) > Convert.ToInt32(scoreline[3]))
-                        team.increaseWins();
+                        team.IncreaseWins();
                     else
-                        team.increaseLosses();
+                        team.IncreaseLosses();
                     foreach (Team opponent in ncaa.FBS)
                     {
-                        if (scoreline[2].Equals(opponent.getTeamName()))
-                            team.addOpponent(opponent);
+                        if (scoreline[2].Equals(opponent.GetTeamName()))
+                            team.AddOpponent(opponent);
                     }
 
                     foreach (Team opponent in ncaa.FCS)
                     {
-                        if (scoreline[2].Equals(opponent.getTeamName()))
-                            team.addOpponent(opponent);
+                        if (scoreline[2].Equals(opponent.GetTeamName()))
+                            team.AddOpponent(opponent);
                     }
                 }
 
-                else if (scoreline[2].Equals(team.getTeamName()))
+                else if (scoreline[2].Equals(team.GetTeamName()))
                 {
-                    team.increaseTotalPoints(Convert.ToInt32(scoreline[3]));
-                    team.increaseTotalPointsAllowed(Convert.ToInt32(scoreline[1]));
+                    team.IncreaseTotalPoints(Convert.ToInt32(scoreline[3]));
+                    team.IncreaseTotalPointsAllowed(Convert.ToInt32(scoreline[1]));
                     if (Convert.ToInt32(scoreline[3]) > Convert.ToInt32(scoreline[1]))
-                        team.increaseWins();
+                        team.IncreaseWins();
                     else
-                        team.increaseLosses();
+                        team.IncreaseLosses();
                     foreach (Team opponent in ncaa.FBS)
                     {
-                        if (scoreline[0].Equals(opponent.getTeamName()))
-                            team.addOpponent(opponent);
+                        if (scoreline[0].Equals(opponent.GetTeamName()))
+                            team.AddOpponent(opponent);
                     }
 
                     foreach (Team opponent in ncaa.FCS)
                     {
-                        if (scoreline[0].Equals(opponent.getTeamName()))
-                            team.addOpponent(opponent);
+                        if (scoreline[0].Equals(opponent.GetTeamName()))
+                            team.AddOpponent(opponent);
                     }
                 }
             }
 
             foreach (Team team in ncaa.FCS)
             {
-                if (scoreline[0].Equals(team.getTeamName()))
+                if (scoreline[0].Equals(team.GetTeamName()))
                 {
-                    team.increaseTotalPoints(Convert.ToInt32(scoreline[1]));
-                    team.increaseTotalPointsAllowed(Convert.ToInt32(scoreline[3]));
+                    team.IncreaseTotalPoints(Convert.ToInt32(scoreline[1]));
+                    team.IncreaseTotalPointsAllowed(Convert.ToInt32(scoreline[3]));
                     if (Convert.ToInt32(scoreline[1]) > Convert.ToInt32(scoreline[3]))
-                        team.increaseWins();
+                        team.IncreaseWins();
                     else
-                        team.increaseLosses();
+                        team.IncreaseLosses();
                     foreach (Team opponent in ncaa.FBS)
                     {
-                        if (scoreline[2].Equals(opponent.getTeamName()))
-                            team.addOpponent(opponent);
+                        if (scoreline[2].Equals(opponent.GetTeamName()))
+                            team.AddOpponent(opponent);
                     }
 
                     foreach (Team opponent in ncaa.FCS)
                     {
-                        if (scoreline[2].Equals(opponent.getTeamName()))
-                            team.addOpponent(opponent);
+                        if (scoreline[2].Equals(opponent.GetTeamName()))
+                            team.AddOpponent(opponent);
                     }
                 }
 
-                else if (scoreline[2].Equals(team.getTeamName()))
+                else if (scoreline[2].Equals(team.GetTeamName()))
                 {
-                    team.increaseTotalPoints(Convert.ToInt32(scoreline[3]));
-                    team.increaseTotalPointsAllowed(Convert.ToInt32(scoreline[1]));
+                    team.IncreaseTotalPoints(Convert.ToInt32(scoreline[3]));
+                    team.IncreaseTotalPointsAllowed(Convert.ToInt32(scoreline[1]));
                     if (Convert.ToInt32(scoreline[3]) > Convert.ToInt32(scoreline[1]))
-                        team.increaseWins();
+                        team.IncreaseWins();
                     else
-                        team.increaseLosses();
+                        team.IncreaseLosses();
                     foreach (Team opponent in ncaa.FBS)
                     {
-                        if (scoreline[0].Equals(opponent.getTeamName()))
-                            team.addOpponent(opponent);
+                        if (scoreline[0].Equals(opponent.GetTeamName()))
+                            team.AddOpponent(opponent);
                     }
 
                     foreach (Team opponent in ncaa.FCS)
                     {
-                        if (scoreline[0].Equals(opponent.getTeamName()))
-                            team.addOpponent(opponent);
+                        if (scoreline[0].Equals(opponent.GetTeamName()))
+                            team.AddOpponent(opponent);
                     }
                 }
             }
@@ -393,7 +393,7 @@ namespace CFBpredictor
             {
                 foreach (Team team in ncaa.FBS)
                 {
-                    if (team.getTeamConference().Equals(conference.conferenceName))
+                    if (team.GetTeamConference().Equals(conference.conferenceName))
                         conference.members.Add(team);
                 }
 
@@ -412,9 +412,9 @@ namespace CFBpredictor
 
             foreach (Team team in ncaa.FBS)
             {
-                if (team.getTeamName().Equals(uxAwayTeam.Text))
+                if (team.GetTeamName().Equals(uxAwayTeam.Text))
                     away = true;
-                else if (team.getTeamName().Equals(uxHomeTeam.Text))
+                else if (team.GetTeamName().Equals(uxHomeTeam.Text))
                     home = true;
             }
 
@@ -459,7 +459,7 @@ namespace CFBpredictor
                 {
                     foreach (Team team in conference.members)
                     {
-                        conference.rating += team.getFBSRank();
+                        conference.rating += team.GetFBSRank();
                     }
                 }
                 conference.rating /= conference.members.Count;
@@ -468,9 +468,9 @@ namespace CFBpredictor
 
         private void DisplayScore(Team awayTeam, Team homeTeam)
         {
-            awayTeam.setPoints(Math.Round(awayTeam.getPoints()));
-            homeTeam.setPoints(Math.Round(homeTeam.getPoints()));
-            MessageBox.Show(awayTeam.getTeamName() + ": " + awayTeam.getPoints() + "\n" + homeTeam.getTeamName() + ": " + homeTeam.getPoints());
+            awayTeam.SetPoints(Math.Round(awayTeam.GetPoints()));
+            homeTeam.SetPoints(Math.Round(homeTeam.GetPoints()));
+            MessageBox.Show(awayTeam.GetTeamName() + ": " + awayTeam.GetPoints() + "\n" + homeTeam.GetTeamName() + ": " + homeTeam.GetPoints());
             homeTeam.ClearPoints();
             awayTeam.ClearPoints();
         }
@@ -495,7 +495,7 @@ namespace CFBpredictor
             foreach (Team team in FBSRankings)
             {
                 FBSRankSheet.Cells[rank_index+1, 1] = rank_index;
-                FBSRankSheet.Cells[rank_index + 1, 2] = team.getTeamName();
+                FBSRankSheet.Cells[rank_index + 1, 2] = team.GetTeamName();
                 FBSRankSheet.Cells[rank_index+1, 3] = String.Format("{0:0.000}", team.rating);
                 rank_index++;
             }
@@ -507,7 +507,7 @@ namespace CFBpredictor
             foreach (Team team in FCSRankings)
             {
                 FCSRankSheet.Cells[rank_index + 1, 1] = rank_index;
-                FCSRankSheet.Cells[rank_index + 1, 2] = team.getTeamName();
+                FCSRankSheet.Cells[rank_index + 1, 2] = team.GetTeamName();
                 FCSRankSheet.Cells[rank_index + 1, 3] = String.Format("{0:0.000}", team.rating);
                 rank_index++;
             }
@@ -519,7 +519,7 @@ namespace CFBpredictor
             foreach (Team team in SOS)
             {
                 SOSRankSheet.Cells[rank_index + 1, 1] = rank_index;
-                SOSRankSheet.Cells[rank_index + 1, 2] = team.getTeamName();
+                SOSRankSheet.Cells[rank_index + 1, 2] = team.GetTeamName();
                 rank_index++;
             }
 
@@ -533,51 +533,51 @@ namespace CFBpredictor
             foreach (Team team in FBSRankings)
             {
 
-                if (team.getFBSRank() < 100 && team.getTeamName().Length < 4)
+                if (team.GetFBSRank() < 100 && team.GetTeamName().Length < 4)
                 {
-                    text.Append(i + ". " + team.getTeamName() + "\t\t\t\t" + team.rating + System.Environment.NewLine);
+                    text.Append(i + ". " + team.GetTeamName() + "\t\t\t\t" + team.rating + System.Environment.NewLine);
                     i++;
                 }
 
-                else if (team.getFBSRank() < 100 && team.getTeamName().Length < 12)
+                else if (team.GetFBSRank() < 100 && team.GetTeamName().Length < 12)
                 {
-                    text.Append(i + ". " + team.getTeamName() + "\t\t\t" + team.rating + System.Environment.NewLine);
+                    text.Append(i + ". " + team.GetTeamName() + "\t\t\t" + team.rating + System.Environment.NewLine);
                     i++;
                 }
 
-                else if (team.getFBSRank() < 100 && team.getTeamName().Length < 20)
+                else if (team.GetFBSRank() < 100 && team.GetTeamName().Length < 20)
                 {
-                    text.Append(i + ". " + team.getTeamName() + "\t\t" + team.rating + System.Environment.NewLine);
+                    text.Append(i + ". " + team.GetTeamName() + "\t\t" + team.rating + System.Environment.NewLine);
                     i++;
                 }
 
-                else if (team.getFBSRank() < 10 && team.getTeamName().Length < 13)
+                else if (team.GetFBSRank() < 10 && team.GetTeamName().Length < 13)
                 {
-                    text.Append(i + ". " + team.getTeamName() + "\t\t\t" + team.rating + System.Environment.NewLine);
+                    text.Append(i + ". " + team.GetTeamName() + "\t\t\t" + team.rating + System.Environment.NewLine);
                     i++;
                 }
 
-                else if (team.getFBSRank() < 100 && team.getTeamName().Length < 12)
+                else if (team.GetFBSRank() < 100 && team.GetTeamName().Length < 12)
                 {
-                    text.Append(i + ". " + team.getTeamName() + "\t\t\t" + team.rating + System.Environment.NewLine);
+                    text.Append(i + ". " + team.GetTeamName() + "\t\t\t" + team.rating + System.Environment.NewLine);
                     i++;
                 }
 
-                else if (team.getFBSRank() > 99 && team.getTeamName().Length < 11)
+                else if (team.GetFBSRank() > 99 && team.GetTeamName().Length < 11)
                 {
-                    text.Append(i + ". " + team.getTeamName() + "\t\t\t" + team.rating + System.Environment.NewLine);
+                    text.Append(i + ". " + team.GetTeamName() + "\t\t\t" + team.rating + System.Environment.NewLine);
                     i++;
                 }
 
-                else if (team.getFBSRank() > 99 && team.getTeamName().Length < 20)
+                else if (team.GetFBSRank() > 99 && team.GetTeamName().Length < 20)
                 {
-                    text.Append(i + ". " + team.getTeamName() + "\t\t" + team.rating + System.Environment.NewLine);
+                    text.Append(i + ". " + team.GetTeamName() + "\t\t" + team.rating + System.Environment.NewLine);
                     i++;
                 }
 
                 else
                 {
-                    text.Append(i + ". " + team.getTeamName() + "\t" + team.rating + System.Environment.NewLine);
+                    text.Append(i + ". " + team.GetTeamName() + "\t" + team.rating + System.Environment.NewLine);
                     i++;
                 }
             }
@@ -623,9 +623,9 @@ namespace CFBpredictor
             foreach (Team team in ncaa.FBS)
             {
                 team.rating += (0 - (low - 1));
-                if (team.getWinPercentage() > 0)
+                if (team.GetWinPercentage() > 0)
                 {
-                    team.rating *= Math.Pow(team.getWinPercentage(), 2);
+                    team.rating *= Math.Pow(team.GetWinPercentage(), 2);
                 }
                 else
                 {
@@ -633,17 +633,17 @@ namespace CFBpredictor
                 }
                 team.rating += 5;
 
-                if (team.getOpponentWinPercentage() > 0)
-                    team.rating *= team.getOpponentWinPercentage();
+                if (team.GetOpponentWinPercentage() > 0)
+                    team.rating *= team.GetOpponentWinPercentage();
                 else team.rating *= .001;
             }
 
             foreach (Team team in ncaa.FCS)
             {
                 team.rating += (0 - (low - 1));
-                if (team.getWinPercentage() > 0)
+                if (team.GetWinPercentage() > 0)
                 {
-                    team.rating *= Math.Pow(team.getWinPercentage(), 2);
+                    team.rating *= Math.Pow(team.GetWinPercentage(), 2);
                 }
                 else
                 {
@@ -651,8 +651,8 @@ namespace CFBpredictor
                 }
                 team.rating += 5;
 
-                if (team.getOpponentWinPercentage() > 0)
-                    team.rating *= team.getOpponentWinPercentage();
+                if (team.GetOpponentWinPercentage() > 0)
+                    team.rating *= team.GetOpponentWinPercentage();
                 else team.rating *= .001;
             }
 
@@ -678,7 +678,7 @@ namespace CFBpredictor
             foreach (Team team in ncaa.FBS)
             {
                 //Gives teams initial rating
-                team.rating += (team.getPPGvsOppAvg() - team.getDefensePPGvsOppAvg()) * 5;
+                team.rating += (team.GetPPGvsOppAvg() - team.GetDefensePPGvsOppAvg()) * 5;
                 if (team.rating < low)
                     low = team.rating;
             }
@@ -686,7 +686,7 @@ namespace CFBpredictor
             foreach (Team team in ncaa.FCS)
             {
                 //Gives teams initial rating
-                team.rating += (team.getPPGvsOppAvg() - team.getDefensePPGvsOppAvg()) * (5/2);
+                team.rating += (team.GetPPGvsOppAvg() - team.GetDefensePPGvsOppAvg()) * (5/2);
                 if (team.rating < low)
                     low = team.rating;
             }
@@ -700,7 +700,7 @@ namespace CFBpredictor
             {
                 foreach (Team team in ncaa.FBS)
                 {
-                    if (team.getTeamName().Equals(uxTeamName.Text))
+                    if (team.GetTeamName().Equals(uxTeamName.Text))
                     {
                         TeamForm tf = new TeamForm(team);
                         tf.Show();
@@ -709,7 +709,7 @@ namespace CFBpredictor
 
                 foreach (Team team in ncaa.FCS)
                 {
-                    if (team.getTeamName().Equals(uxTeamName.Text))
+                    if (team.GetTeamName().Equals(uxTeamName.Text))
                     {
                         TeamForm tf = new TeamForm(team);
                         tf.Show();
@@ -738,7 +738,7 @@ namespace CFBpredictor
 
                     foreach (Team team in ncaa.FBS)
                     {
-                        if (team.getTeamName().Equals(teamName))
+                        if (team.GetTeamName().Equals(teamName))
                         {
                             TeamForm tf = new TeamForm(team);
                             tf.Show();
@@ -747,7 +747,7 @@ namespace CFBpredictor
 
                     foreach (Team team in ncaa.FCS)
                     {
-                        if (team.getTeamName().Equals(teamName))
+                        if (team.GetTeamName().Equals(teamName))
                         {
                             TeamForm tf = new TeamForm(team);
                             tf.Show();
@@ -762,23 +762,23 @@ namespace CFBpredictor
             //Calculates SOS for each team among other team stats
             foreach (Team team in ncaa.FBS)
             {
-                foreach (Team opponent in team.getSchedule())
+                foreach (Team opponent in team.GetSchedule())
                 {
-                    team.increaseOpponentWins(opponent.getWins());
-                    team.increaseOpponentLosses(opponent.getLosses());
-                    team.increaseOpponentTotalPoints(Convert.ToInt32(opponent.getTotalPoints()));
-                    team.increaseOpponentTotalPointsAllowed(Convert.ToInt32(opponent.getTotalPointsAllowed()));
+                    team.IncreaseOpponentWins(opponent.GetWins());
+                    team.IncreaseOpponentLosses(opponent.GetLosses());
+                    team.IncreaseOpponentTotalPoints(Convert.ToInt32(opponent.GetTotalPoints()));
+                    team.IncreaseOpponentTotalPointsAllowed(Convert.ToInt32(opponent.GetTotalPointsAllowed()));
                 }
            }
 
             foreach (Team team in ncaa.FCS)
             {
-                foreach (Team opponent in team.getSchedule())
+                foreach (Team opponent in team.GetSchedule())
                 {
-                    team.increaseOpponentWins(opponent.getWins());
-                    team.increaseOpponentLosses(opponent.getLosses());
-                    team.increaseOpponentTotalPoints(Convert.ToInt32(opponent.getTotalPoints()));
-                    team.increaseOpponentTotalPointsAllowed(Convert.ToInt32(opponent.getTotalPointsAllowed()));
+                    team.IncreaseOpponentWins(opponent.GetWins());
+                    team.IncreaseOpponentLosses(opponent.GetLosses());
+                    team.IncreaseOpponentTotalPoints(Convert.ToInt32(opponent.GetTotalPoints()));
+                    team.IncreaseOpponentTotalPointsAllowed(Convert.ToInt32(opponent.GetTotalPointsAllowed()));
                 }
             }
         }
@@ -826,12 +826,12 @@ namespace CFBpredictor
             //Reevaluates SOS based on previous rankings generated
             foreach (Team team in Rankings)
             {
-                foreach (Team name in team.getSchedule())
+                foreach (Team name in team.GetSchedule())
                 {
-                    team.setStrength(team.getStrength() + name.getRank());
+                    team.SetStrength(team.GetStrength() + name.GetRank());
                 }
                 team.rating += 5;
-                team.rating /= (team.getStrength() / (team.getWins() + team.getLosses()));
+                team.rating /= (team.GetStrength() / (team.GetWins() + team.GetLosses()));
             }
         }
 
@@ -839,7 +839,7 @@ namespace CFBpredictor
         {
             foreach (Team team in ncaa.FBS)
             {
-                team.rating += (team.getPPGvsOppAvg() - team.getDefensePPGvsOppAvg()) * 5;
+                team.rating += (team.GetPPGvsOppAvg() - team.GetDefensePPGvsOppAvg()) * 5;
                 if (team.rating < low)
                 {
                     low = team.rating;
@@ -849,7 +849,7 @@ namespace CFBpredictor
 
             foreach (Team team in ncaa.FCS)
             {
-                team.rating += (team.getPPGvsOppAvg() - team.getDefensePPGvsOppAvg()) * (5/2);
+                team.rating += (team.GetPPGvsOppAvg() - team.GetDefensePPGvsOppAvg()) * (5/2);
                 if (team.rating < low)
                 {
                     low = team.rating;
@@ -859,9 +859,9 @@ namespace CFBpredictor
             foreach (Team team in ncaa.FBS)
             {
                 team.rating += (0 - (low - 1));
-                if (team.getWinPercentage() > 0)
+                if (team.GetWinPercentage() > 0)
                 {
-                    team.rating *= Math.Pow(team.getWinPercentage(), 2);
+                    team.rating *= Math.Pow(team.GetWinPercentage(), 2);
                 }
                 else
                 {
@@ -872,9 +872,9 @@ namespace CFBpredictor
             foreach (Team team in ncaa.FCS)
             {
                 team.rating += (0 - (low - 1));
-                if (team.getWinPercentage() > 0)
+                if (team.GetWinPercentage() > 0)
                 {
-                    team.rating *= Math.Pow(team.getWinPercentage(), 2);
+                    team.rating *= Math.Pow(team.GetWinPercentage(), 2);
                 }
                 else
                 {
@@ -895,7 +895,7 @@ namespace CFBpredictor
             int i = 1;
             foreach (Team team in Rankings)
             {
-                team.setRank(i);
+                team.SetRank(i);
                 i++;
             }
 
@@ -908,14 +908,14 @@ namespace CFBpredictor
             {
                 foreach (Team team in Division1)
                 {
-                    if (team.getTeamConference() != "FCS")
+                    if (team.GetTeamConference() != "FCS")
                         team.rating *= 100;
                 }
                 List<Team> FBSRankings = ncaa.FBS.OrderBy(o => o.rating).Reverse().ToList();
                 int k = 1;
                 foreach (Team team in FBSRankings)
                 {
-                    team.setFBSRank(k);
+                    team.SetFBSRank(k);
                     k++;
                 }
                 foreach (Team team in ncaa.FCS)
@@ -930,28 +930,28 @@ namespace CFBpredictor
         {
             foreach (Team t in ncaa.FBS)
             {
-                if ((t.getWins() + t.getLosses()) != 0)
-                    t.setStrength(t.getStrength() / (Convert.ToInt16(t.getWins() + t.getLosses())));
+                if ((t.GetWins() + t.GetLosses()) != 0)
+                    t.SetStrength(t.GetStrength() / (Convert.ToInt16(t.GetWins() + t.GetLosses())));
 
-                else t.setStrength(int.MaxValue);
+                else t.SetStrength(int.MaxValue);
             }
-            SOS = ncaa.FBS.OrderBy(o => o.getStrength()).ToList();
+            SOS = ncaa.FBS.OrderBy(o => o.GetStrength()).ToList();
             int p = 1;
             foreach (Team team in SOS)
             {
-                team.setSOSRank(p);
+                team.SetSOSRank(p);
                 p++;
             }
         }
 
         private void Predict(Team awayTeam, Team homeTeam)
         {
-            awayTeam.setPoints(awayTeam.getPoints() + (awayTeam.getPPG() + homeTeam.getDefensePPGvsOppAvg()));
-            awayTeam.setPoints(awayTeam.getPoints() + homeTeam.getDefensePPG() + awayTeam.getPPGvsOppAvg());
-            awayTeam.setPoints(awayTeam.getPoints() / 2);
-            homeTeam.setPoints(homeTeam.getPoints() + (homeTeam.getPPG() + awayTeam.getDefensePPGvsOppAvg()));
-            homeTeam.setPoints(homeTeam.getPoints() + (awayTeam.getDefensePPG() + homeTeam.getPPGvsOppAvg()));
-            homeTeam.setPoints(homeTeam.getPoints() / 2);
+            awayTeam.SetPoints(awayTeam.GetPoints() + (awayTeam.GetPPG() + homeTeam.GetDefensePPGvsOppAvg()));
+            awayTeam.SetPoints(awayTeam.GetPoints() + homeTeam.GetDefensePPG() + awayTeam.GetPPGvsOppAvg());
+            awayTeam.SetPoints(awayTeam.GetPoints() / 2);
+            homeTeam.SetPoints(homeTeam.GetPoints() + (homeTeam.GetPPG() + awayTeam.GetDefensePPGvsOppAvg()));
+            homeTeam.SetPoints(homeTeam.GetPoints() + (awayTeam.GetDefensePPG() + homeTeam.GetPPGvsOppAvg()));
+            homeTeam.SetPoints(homeTeam.GetPoints() / 2);
             DisplayScore(awayTeam, homeTeam);
         }
 
@@ -1010,14 +1010,14 @@ namespace CFBpredictor
         {
             //if (away.teamConference != "FCS" && home.teamConference != "FCS")
             //{
-                away.setPoints(away.getPoints() + (away.getPPG() + home.getDefensePPGvsOppAvg()));
-                away.setPoints(away.getPoints() + (home.getDefensePPG() + away.getPPGvsOppAvg()));
-                away.setPoints(away.getPoints() / 2);
-                home.setPoints(home.getPoints() + (home.getPPG() + away.getDefensePPGvsOppAvg()));
-                home.setPoints(away.getPoints() + (away.getDefensePPG() + home.getPPGvsOppAvg()));
-                home.setPoints(away.getPoints() / 2);
+                away.SetPoints(away.GetPoints() + (away.GetPPG() + home.GetDefensePPGvsOppAvg()));
+                away.SetPoints(away.GetPoints() + (home.GetDefensePPG() + away.GetPPGvsOppAvg()));
+                away.SetPoints(away.GetPoints() / 2);
+                home.SetPoints(home.GetPoints() + (home.GetPPG() + away.GetDefensePPGvsOppAvg()));
+                home.SetPoints(away.GetPoints() + (away.GetDefensePPG() + home.GetPPGvsOppAvg()));
+                home.SetPoints(away.GetPoints() / 2);
 
-                Game g = new Game(home, away, home.getPoints(), away.getPoints());
+                Game g = new Game(home, away, home.GetPoints(), away.GetPoints());
                 Week.Add(g);
             //}
         }
@@ -1041,40 +1041,40 @@ namespace CFBpredictor
             int k = 1;
             foreach (Team team in FBSRankings)
             {
-                team.setFBSRank(k);
+                team.SetFBSRank(k);
                 k++;
             }
 
             foreach (Team team in FCSRankings)
             {
                 //TODO: Check this out.
-                team.setFBSRank(k);
+                team.SetFBSRank(k);
                 k++;
             }
 
             int i = 2;
             foreach (Game g in Week)
             {
-                scores.Append(g.awayTeam.getTeamName() + ": " + g.awayScore + "   ");
-                scores.AppendLine(g.homeTeam.getTeamName() + ": " + g.homeScore);
-                if (g.awayTeam.getFBSRank() <= 25)
+                scores.Append(g.awayTeam.GetTeamName() + ": " + g.awayScore + "   ");
+                scores.AppendLine(g.homeTeam.GetTeamName() + ": " + g.homeScore);
+                if (g.awayTeam.GetFBSRank() <= 25)
                 {
-                    xlWorkSheet.Cells[i, 1] = "#" + g.awayTeam.getFBSRank() + " " + g.awayTeam.getTeamName();
+                    xlWorkSheet.Cells[i, 1] = "#" + g.awayTeam.GetFBSRank() + " " + g.awayTeam.GetTeamName();
                 }
                 else
                 {
-                    xlWorkSheet.Cells[i, 1] = g.awayTeam.getTeamName();
+                    xlWorkSheet.Cells[i, 1] = g.awayTeam.GetTeamName();
                 }
 
                 xlWorkSheet.Cells[i, 2] = g.awayScore;
                 xlWorkSheet.Cells[i, 3] = g.homeScore;
-                if (g.homeTeam.getFBSRank() <= 25)
+                if (g.homeTeam.GetFBSRank() <= 25)
                 {
-                    xlWorkSheet.Cells[i, 4] = "#" + g.homeTeam.getFBSRank() + " " + g.homeTeam.getTeamName();
+                    xlWorkSheet.Cells[i, 4] = "#" + g.homeTeam.GetFBSRank() + " " + g.homeTeam.GetTeamName();
                 }
                 else
                 {
-                    xlWorkSheet.Cells[i, 4] = g.homeTeam.getTeamName();
+                    xlWorkSheet.Cells[i, 4] = g.homeTeam.GetTeamName();
                 }
                 i++;
             }
@@ -1128,15 +1128,15 @@ namespace CFBpredictor
             {
                 foreach (Team team in ncaa.FBS)
                 {
-                    if (team.getTeamName().Equals(uxTeamName.Text))
+                    if (team.GetTeamName().Equals(uxTeamName.Text))
                     {
                         StringBuilder sb = new StringBuilder();
-                        sb.Append(team.getFBSRank() + ". " + team.getTeamName() + " (" + team.getWins() + "-" + team.getLosses() + ")  SOS: " + team.getSOSRank() + "\n_____________________\n\n");
-                        for (int i = 0; i < team.getScheduleSize(); i++)
+                        sb.Append(team.GetFBSRank() + ". " + team.GetTeamName() + " (" + team.GetWins() + "-" + team.GetLosses() + ")  SOS: " + team.GetSOSRank() + "\n_____________________\n\n");
+                        for (int i = 0; i < team.GetScheduleSize(); i++)
                         {
-                            if (team.getOpponent(i).getFBSRank() != 0)
-                                sb.Append(team.getOpponent(i).getFBSRank() + ". " + team.getOpponent(i).getTeamName() + " (" + team.getOpponent(i).getWins() + "-" + team.getOpponent(i).getLosses() + ")\n");
-                            else sb.Append(team.getOpponent(i).getTeamName() + " (" + team.getOpponent(i).getWins() + "-" + team.getOpponent(i).getLosses() + ")\n");
+                            if (team.GetOpponent(i).GetFBSRank() != 0)
+                                sb.Append(team.GetOpponent(i).GetFBSRank() + ". " + team.GetOpponent(i).GetTeamName() + " (" + team.GetOpponent(i).GetWins() + "-" + team.GetOpponent(i).GetLosses() + ")\n");
+                            else sb.Append(team.GetOpponent(i).GetTeamName() + " (" + team.GetOpponent(i).GetWins() + "-" + team.GetOpponent(i).GetLosses() + ")\n");
                         }
 
                         MessageBox.Show(sb.ToString());
@@ -1146,13 +1146,13 @@ namespace CFBpredictor
 
                 foreach (Team team in ncaa.FCS)
                 {
-                    if (team.getTeamName().Equals(uxTeamName.Text))
+                    if (team.GetTeamName().Equals(uxTeamName.Text))
                     {
                         StringBuilder sb = new StringBuilder();
-                        sb.Append(team.getFBSRank() + ". " + team.getTeamName() + " (" + team.getWins() + "-" + team.getLosses() + ")  SOS: " + team.getSOSRank() + "\n_____________________\n\n");
-                        for (int i = 0; i < team.getScheduleSize(); i++)
+                        sb.Append(team.GetFBSRank() + ". " + team.GetTeamName() + " (" + team.GetWins() + "-" + team.GetLosses() + ")  SOS: " + team.GetSOSRank() + "\n_____________________\n\n");
+                        for (int i = 0; i < team.GetScheduleSize(); i++)
                         {
-                            sb.Append(team.getOpponent(i).getTeamName() + " (" + team.getOpponent(i).getWins() + "-" + team.getOpponent(i).getLosses() + ")\n");
+                            sb.Append(team.GetOpponent(i).GetTeamName() + " (" + team.GetOpponent(i).GetWins() + "-" + team.GetOpponent(i).GetLosses() + ")\n");
                         }
 
                         MessageBox.Show(sb.ToString());
@@ -1181,15 +1181,15 @@ namespace CFBpredictor
 
                 foreach (Team team in ncaa.FBS)
                 {
-                    if (team.getTeamName().Equals(teamName))
+                    if (team.GetTeamName().Equals(teamName))
                     {
                         StringBuilder sb = new StringBuilder();
-                        sb.Append(team.getFBSRank() + ". " + team.getTeamName() + " (" + team.getWins() + "-" + team.getLosses() + ")  SOS: " + team.getSOSRank() + "\n_____________________\n\n");
-                        for (int i = 0; i < team.getScheduleSize(); i++)
+                        sb.Append(team.GetFBSRank() + ". " + team.GetTeamName() + " (" + team.GetWins() + "-" + team.GetLosses() + ")  SOS: " + team.GetSOSRank() + "\n_____________________\n\n");
+                        for (int i = 0; i < team.GetScheduleSize(); i++)
                         {
-                            if (team.getOpponent(i).getFBSRank() != 0)
-                                sb.Append(team.getOpponent(i).getFBSRank() + ". " + team.getOpponent(i).getTeamName() + " (" + team.getOpponent(i).getWins() + "-" + team.getOpponent(i).getLosses() + ")\n");
-                            else sb.Append(team.getOpponent(i).getTeamName() + " (" + team.getOpponent(i).getWins() + "-" + team.getOpponent(i).getLosses() + ")\n");
+                            if (team.GetOpponent(i).GetFBSRank() != 0)
+                                sb.Append(team.GetOpponent(i).GetFBSRank() + ". " + team.GetOpponent(i).GetTeamName() + " (" + team.GetOpponent(i).GetWins() + "-" + team.GetOpponent(i).GetLosses() + ")\n");
+                            else sb.Append(team.GetOpponent(i).GetTeamName() + " (" + team.GetOpponent(i).GetWins() + "-" + team.GetOpponent(i).GetLosses() + ")\n");
                         }
 
                         MessageBox.Show(sb.ToString());
@@ -1199,13 +1199,13 @@ namespace CFBpredictor
 
                 foreach (Team team in ncaa.FCS)
                 {
-                    if (team.getTeamName().Equals(teamName))
+                    if (team.GetTeamName().Equals(teamName))
                     {
                         StringBuilder sb = new StringBuilder();
-                        sb.Append(team.getFBSRank() + ". " + team.getTeamName() + " (" + team.getWins() + "-" + team.getLosses() + ")  SOS: " + team.getSOSRank() + "\n_____________________\n\n");
-                        for (int i = 0; i < team.getScheduleSize(); i++)
+                        sb.Append(team.GetFBSRank() + ". " + team.GetTeamName() + " (" + team.GetWins() + "-" + team.GetLosses() + ")  SOS: " + team.GetSOSRank() + "\n_____________________\n\n");
+                        for (int i = 0; i < team.GetScheduleSize(); i++)
                         {
-                            sb.Append(team.getOpponent(i).getTeamName() + " (" + team.getOpponent(i).getWins() + "-" + team.getOpponent(i).getLosses() + ")\n");
+                            sb.Append(team.GetOpponent(i).GetTeamName() + " (" + team.GetOpponent(i).GetWins() + "-" + team.GetOpponent(i).GetLosses() + ")\n");
                         }
 
                         MessageBox.Show(sb.ToString());
@@ -1224,9 +1224,9 @@ namespace CFBpredictor
 
             foreach (Team team in ncaa.FBS)
             {
-                if (team.getTeamName().Equals(uxAwayTeam.Text))
+                if (team.GetTeamName().Equals(uxAwayTeam.Text))
                     away = true;
-                else if (team.getTeamName().Equals(uxHomeTeam.Text))
+                else if (team.GetTeamName().Equals(uxHomeTeam.Text))
                     home = true;
             }
 
@@ -1235,12 +1235,12 @@ namespace CFBpredictor
                 foreach (Team team in ncaa.FBS)
                 {
 
-                    if (uxAwayTeam.Text.Equals(team.getTeamName()))
+                    if (uxAwayTeam.Text.Equals(team.GetTeamName()))
                     {
                         awayTeam = team;
                     }
 
-                    else if (uxHomeTeam.Text.Equals(team.getTeamName()))
+                    else if (uxHomeTeam.Text.Equals(team.GetTeamName()))
                     {
                         homeTeam = team;
                     }
@@ -1297,7 +1297,7 @@ namespace CFBpredictor
                 {
                     foreach (Team fbsteam in ncaa.FBS)
                     {
-                        if (fbsteam.getTeamID().Equals(ID))
+                        if (fbsteam.GetTeamID().Equals(ID))
                         {
                             team1 = fbsteam;
                         }
@@ -1307,7 +1307,7 @@ namespace CFBpredictor
                     {
                         foreach (Team fcsteam in ncaa.FCS)
                         {
-                            if (fcsteam.getTeamID().Equals(ID))
+                            if (fcsteam.GetTeamID().Equals(ID))
                             {
                                 team1 = fcsteam;
                             }
@@ -1321,7 +1321,7 @@ namespace CFBpredictor
                 {
                     foreach (Team team in ncaa.FBS)
                     {
-                        if (team.getTeamID().Equals(ID))
+                        if (team.GetTeamID().Equals(ID))
                         {
                             team2 = team;
                             SimGame(team1, team2);
@@ -1382,12 +1382,12 @@ namespace CFBpredictor
 
                     foreach (Team fcsTeam in ncaa.FCS)
                     {
-                        if (fcsTeam.getTeamID().Equals(team1ID))
+                        if (fcsTeam.GetTeamID().Equals(team1ID))
                         {
                             team1 = fcsTeam;
                         }
 
-                        else if (fcsTeam.getTeamID().Equals(team2ID))
+                        else if (fcsTeam.GetTeamID().Equals(team2ID))
                         {
                             team2 = fcsTeam;
                         }
@@ -1495,7 +1495,7 @@ namespace CFBpredictor
                         {
                             foreach (Team fbsteam in ncaa.FBS)
                             {
-                                if (fbsteam.getTeamID().Equals(ID))
+                                if (fbsteam.GetTeamID().Equals(ID))
                                 {
                                     ID1 = ID;
                                     team1 = fbsteam;
@@ -1507,7 +1507,7 @@ namespace CFBpredictor
                             {
                                 foreach (Team fcsteam in ncaa.FCS)
                                 {
-                                    if (fcsteam.getTeamID().Equals(ID))
+                                    if (fcsteam.GetTeamID().Equals(ID))
                                     {
                                         ID1 = ID;
                                         team1 = fcsteam;
@@ -1523,12 +1523,12 @@ namespace CFBpredictor
                         {
                             foreach (Team team in ncaa.FBS)
                             {
-                                if (team.getTeamID().Equals(ID))
+                                if (team.GetTeamID().Equals(ID))
                                 {
                                     ID2 = ID;
                                     team2 = team;
                                     team2Score = score;
-                                    games.Add(team1.getTeamName() + "-" + team1Score + "-" + team2.getTeamName() + "-" + team2Score);
+                                    games.Add(team1.GetTeamName() + "-" + team1Score + "-" + team2.GetTeamName() + "-" + team2Score);
                                     team1 = null;
                                     team2 = null;
                                     //i += 6;
@@ -1647,19 +1647,19 @@ namespace CFBpredictor
 
                             foreach (Team fcsTeam in ncaa.FCS)
                             {
-                                if (fcsTeam.getTeamID().Equals(team1ID))
+                                if (fcsTeam.GetTeamID().Equals(team1ID))
                                 {
                                     team1 = fcsTeam;
                                 }
 
-                                else if (fcsTeam.getTeamID().Equals(team2ID))
+                                else if (fcsTeam.GetTeamID().Equals(team2ID))
                                 {
                                     team2 = fcsTeam;
                                 }
                             }
                             if (team1 != null && team2 != null)
                             {
-                                games.Add(team1.getTeamName() + "-" + score1 + "-" + team2.getTeamName() + "-" + score2);
+                                games.Add(team1.GetTeamName() + "-" + score1 + "-" + team2.GetTeamName() + "-" + score2);
                                 //SimGame(team1, team2);
                                 team1 = null;
                                 team2 = null;

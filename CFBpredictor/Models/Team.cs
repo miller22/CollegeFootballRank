@@ -56,7 +56,7 @@ namespace CFBpredictor
         /// Gets the name of the team
         /// </summary>
         /// <returns>the name of the team</returns>
-        public string getTeamName()
+        public string GetTeamName()
         {
             return teamName;
         }
@@ -65,7 +65,7 @@ namespace CFBpredictor
         /// Gets the ID of the team
         /// </summary>
         /// <returns>the team's ID</returns>
-        public string getTeamID()
+        public string GetTeamID()
         {
             return teamID;
         }
@@ -74,7 +74,7 @@ namespace CFBpredictor
         /// Gets the amount of wins the team has
         /// </summary>
         /// <returns>the team's number of wins</returns>
-        public double getWins()
+        public double GetWins()
         {
             return wins;
         }
@@ -83,7 +83,7 @@ namespace CFBpredictor
         /// Gets the amount of losses the team has
         /// </summary>
         /// <returns>the team's number of losses</returns>
-        public double getLosses()
+        public double GetLosses()
         {
             return losses;
         }
@@ -92,7 +92,7 @@ namespace CFBpredictor
         /// Gets the points per game average of the team
         /// </summary>
         /// <returns>The team's points per game average</returns>
-        public double getPPG()
+        public double GetPPG()
         {
             if (wins + losses > 0)
             {
@@ -105,7 +105,7 @@ namespace CFBpredictor
         /// Gets the points allowed per game for the team
         /// </summary>
         /// <returns>The team's points allowed per game average</returns>
-        public double getDefensePPG()
+        public double GetDefensePPG()
         {
             if (wins + losses > 0)
             {
@@ -118,7 +118,7 @@ namespace CFBpredictor
         /// Gets the a team's opponents' points per game average
         /// </summary>
         /// <returns>the team's opponents' points per game</returns>
-        public double getOpponentPPG()
+        public double GetOpponentPPG()
         {
             if (opponentWins + opponentLosses > 0)
             {
@@ -131,9 +131,13 @@ namespace CFBpredictor
         /// Gets a team's opponents' points allowed per game average
         /// </summary>
         /// <returns>the team's opponents' points allowed per game</returns>
-        public double getOpponentDefensePPG()
+        public double GetOpponentDefensePPG()
         {
-            return opponentTotalPointsAllowed / (opponentWins + opponentLosses);
+            if (opponentWins + opponentLosses > 0)
+            {
+                return opponentTotalPointsAllowed / (opponentWins + opponentLosses);
+            }
+            else return 0;
         }
 
         /// <summary>
@@ -142,9 +146,9 @@ namespace CFBpredictor
         /// </summary>
         /// <returns>the team's points per game minus opponents points allowed per
         /// game</returns>
-        public double getPPGvsOppAvg()
+        public double GetPPGvsOppAvg()
         {
-            return getPPG() - getOpponentDefensePPG();
+            return GetPPG() - GetOpponentDefensePPG();
         }
 
         /// <summary>
@@ -153,16 +157,16 @@ namespace CFBpredictor
         /// </summary>
         /// <returns>the team's points allowed per game minus opponents points
         /// scored per game</returns>
-        public double getDefensePPGvsOppAvg()
+        public double GetDefensePPGvsOppAvg()
         {
-            return getDefensePPG() - getOpponentPPG();
+            return GetDefensePPG() - GetOpponentPPG();
         }
 
         /// <summary>
         /// Gets the total number of points the team has scored
         /// </summary>
         /// <returns>The team's total points scored</returns>
-        public double getTotalPoints()
+        public double GetTotalPoints()
         {
             return totalPoints;
         }
@@ -171,7 +175,7 @@ namespace CFBpredictor
         /// Gets the total number of points the team has allowed
         /// </summary>
         /// <returns>The team's total points allowed</returns>
-        public double getTotalPointsAllowed()
+        public double GetTotalPointsAllowed()
         {
             return totalPointsAllowed;
         }
@@ -180,7 +184,7 @@ namespace CFBpredictor
         /// Gets the total number of wins the team's opponents have
         /// </summary>
         /// <returns>total number of wins by the team's opponents</returns>
-        public double getOpponentWins()
+        public double GetOpponentWins()
         {
             return opponentWins;
         }
@@ -189,7 +193,7 @@ namespace CFBpredictor
         /// Gets the total number of losses the team's opponents have
         /// </summary>
         /// <returns>total number of losses by the team's opponents</returns>
-        public double getOpponentLosses()
+        public double GetOpponentLosses()
         {
             return opponentLosses;
         }
@@ -198,7 +202,7 @@ namespace CFBpredictor
         /// Gets the team's win percentage
         /// </summary>
         /// <returns>the team's winning percentage</returns>
-        public double getWinPercentage()
+        public double GetWinPercentage()
         {
             if (wins + losses > 0)
             {
@@ -211,7 +215,7 @@ namespace CFBpredictor
         /// Gets the win percentage for the team's opponents
         /// </summary>
         /// <returns>the win percentage for the team's opponents</returns>
-        public double getOpponentWinPercentage()
+        public double GetOpponentWinPercentage()
         {
             if (opponentWins + opponentLosses > 0)
             {
@@ -225,7 +229,7 @@ namespace CFBpredictor
         /// the season
         /// </summary>
         /// <returns>the team's opponents' total points scored</returns>
-        public double getOpponentTotalPoints()
+        public double GetOpponentTotalPoints()
         {
             return opponentTotalPoints;
         }
@@ -235,7 +239,7 @@ namespace CFBpredictor
         /// the season
         /// </summary>
         /// <returns>the team's opponents' total points allowed</returns>
-        public double getOpponentTotalPointsAllowed()
+        public double GetOpponentTotalPointsAllowed()
         {
             return opponentTotalPointsAllowed;
         }
@@ -245,7 +249,7 @@ namespace CFBpredictor
         /// schedule
         /// </summary>
         /// <returns>the team's opponents' adjusted points per game</returns>
-        public double getOppAdjustedPPG()
+        public double GetOppAdjustedPPG()
         {
             return oppAdjustedPPG;
         }
@@ -255,7 +259,7 @@ namespace CFBpredictor
         /// strength of schedule
         /// </summary>
         /// <returns>the team's opponents' adjusted points allowed per game</returns>
-        public double getOppAdjustedDPPG()
+        public double GetOppAdjustedDPPG()
         {
             return oppAdjustedDPPG;
         }
@@ -264,7 +268,7 @@ namespace CFBpredictor
         /// Gets the team's conference
         /// </summary>
         /// <returns>the team's conference</returns>
-        public String getTeamConference()
+        public string GetTeamConference()
         {
             return teamConference;
         }
@@ -273,7 +277,7 @@ namespace CFBpredictor
         /// Gets the team's overall rank
         /// </summary>
         /// <returns>the team's overall rank</returns>
-        public int getRank()
+        public int GetRank()
         {
             return rank;
         }
@@ -282,7 +286,7 @@ namespace CFBpredictor
         /// Gets the team's FBS rank
         /// </summary>
         /// <returns>the team's FBS rank</returns>
-        public int getFBSRank()
+        public int GetFBSRank()
         {
             return FBSRank;
         }
@@ -291,7 +295,7 @@ namespace CFBpredictor
         /// Gets the team's strength of schedule rank
         /// </summary>
         /// <returns>the team's strength of schedule rank</returns>
-        public int getSOSRank()
+        public int GetSOSRank()
         {
             return SOS;
         }
@@ -300,7 +304,7 @@ namespace CFBpredictor
         /// Gets the team's strength of schedule rating
         /// </summary>
         /// <returns>the team's strength of schedule rating</returns>
-        public double getStrength()
+        public double GetStrength()
         {
             return strength;
         }
@@ -310,7 +314,7 @@ namespace CFBpredictor
         /// </summary>
         /// <returns>the number of points the team is expected to
         /// score</returns>
-        public double getPoints()
+        public double GetPoints()
         {
             return projectedPoints;
         }
@@ -319,7 +323,7 @@ namespace CFBpredictor
         /// Gets the team's schedule as a list of Teams
         /// </summary>
         /// <returns>the team's schedule</returns>
-        public List<Team> getSchedule()
+        public List<Team> GetSchedule()
         {
             return schedule;
         }
@@ -330,7 +334,7 @@ namespace CFBpredictor
         /// </summary>
         /// <param name="index">index of the opponent to get</param>
         /// <returns>the opponent at the passed in index</returns>
-        public Team getOpponent(int index)
+        public Team GetOpponent(int index)
         {
             return schedule[index];
         }
@@ -338,7 +342,7 @@ namespace CFBpredictor
         /// <summary>
         /// Increments the team's win count by 1
         /// </summary>
-        public void increaseWins()
+        public void IncreaseWins()
         {
             wins++;
         }
@@ -346,7 +350,7 @@ namespace CFBpredictor
         /// <summary>
         /// Increments the team's loss count by 1
         /// </summary>
-        public void increaseLosses()
+        public void IncreaseLosses()
         {
             losses++;
         }
@@ -355,7 +359,7 @@ namespace CFBpredictor
         /// Increases the team's total points scored for the season
         /// </summary>
         /// <param name="points">the amount to increase the total points by</param>
-        public void increaseTotalPoints(int points)
+        public void IncreaseTotalPoints(int points)
         {
             totalPoints += points;
         }
@@ -364,7 +368,7 @@ namespace CFBpredictor
         /// Increases the team's total points allowed for the season
         /// </summary>
         /// <param name="points">the amount to increase the points allowed by</param>
-        public void increaseTotalPointsAllowed(int points)
+        public void IncreaseTotalPointsAllowed(int points)
         {
             totalPointsAllowed += points;
         }
@@ -373,7 +377,7 @@ namespace CFBpredictor
         /// Increases the team's opponents' total win count
         /// </summary>
         /// <param name="opponentWins">the amount of wins to increase by</param>
-        public void increaseOpponentWins(double opponentWins)
+        public void IncreaseOpponentWins(double opponentWins)
         {
             this.opponentWins += opponentWins;
         }
@@ -382,7 +386,7 @@ namespace CFBpredictor
         /// Increases the team's opponents' total loss count
         /// </summary>
         /// <param name="opponentLosses">the amount of losses to increase by</param>
-        public void increaseOpponentLosses(double opponentLosses)
+        public void IncreaseOpponentLosses(double opponentLosses)
         {
             this.opponentLosses += opponentLosses;
         }
@@ -391,7 +395,7 @@ namespace CFBpredictor
         /// Increases the team's opponents' total points scored
         /// </summary>
         /// <param name="points">the amount of points to increase by</param>
-        public void increaseOpponentTotalPoints(int points)
+        public void IncreaseOpponentTotalPoints(int points)
         {
             opponentTotalPoints += points;
         }
@@ -400,7 +404,7 @@ namespace CFBpredictor
         /// Increases the team's opponents' total points allowed
         /// </summary>
         /// <param name="points">The amount of points to increase by</param>
-        public void increaseOpponentTotalPointsAllowed(int points)
+        public void IncreaseOpponentTotalPointsAllowed(int points)
         {
             opponentTotalPointsAllowed += points;
         }
@@ -410,9 +414,9 @@ namespace CFBpredictor
         /// </summary>
         /// <param name="low">the low value for any team's points per game
         /// compared to their opponents average points allowed</param>
-        public void setOppAdjustedPPG(double low)
+        public void SetOppAdjustedPPG(double low)
         {
-            oppAdjustedPPG = 2 * getPPGvsOppAvg() - low - 8.5;
+            oppAdjustedPPG = 2 * GetPPGvsOppAvg() - low - 8.5;
         }
 
         /// <summary>
@@ -420,17 +424,17 @@ namespace CFBpredictor
         /// </summary>
         /// <param name="high">the high value for any team's points allowed
         /// per game compared to their opponents average points scored</param>
-        public void setOppAdjustedDPPG(double high)
+        public void SetOppAdjustedDPPG(double high)
         {
-            oppAdjustedDPPG = -((getDefensePPGvsOppAvg() - high - 1) * ((129 - Convert.ToDouble(getSOSRank())) / 100)
-                              + getDefensePPGvsOppAvg() + 11.5);
+            oppAdjustedDPPG = -((GetDefensePPGvsOppAvg() - high - 1) * ((129 - Convert.ToDouble(GetSOSRank())) / 100)
+                              + GetDefensePPGvsOppAvg() + 11.5);
         }
 
         /// <summary>
         /// Sets the rank for the team
         /// </summary>
         /// <param name="rank">the rank for the team</param>
-        public void setRank(int rank)
+        public void SetRank(int rank)
         {
             this.rank = rank;
         }
@@ -439,7 +443,7 @@ namespace CFBpredictor
         /// Sets the FBSRank for the team
         /// </summary>
         /// <param name="rank">the FBSRank for the team</param>
-        public void setFBSRank(int rank)
+        public void SetFBSRank(int rank)
         {
             FBSRank = rank;
         }
@@ -448,7 +452,7 @@ namespace CFBpredictor
         /// Sets the strength of schedule rank for the team
         /// </summary>
         /// <param name="SOS">the strength of schedule for the team</param>
-        public void setSOSRank(int SOS)
+        public void SetSOSRank(int SOS)
         {
             this.SOS = SOS;
         }
@@ -457,7 +461,7 @@ namespace CFBpredictor
         /// Sets the strength of the team's schedule
         /// </summary>
         /// <param name="strength">the strength of the team's schedule</param>
-        public void setStrength(double strength)
+        public void SetStrength(double strength)
         {
             this.strength = strength;
         }
@@ -466,7 +470,7 @@ namespace CFBpredictor
         /// Sets the number of points the team is projected to score
         /// </summary>
         /// <param name="projectedPoints">the points the team is projected to score</param>
-        public void setPoints(double projectedPoints)
+        public void SetPoints(double projectedPoints)
         {
             this.projectedPoints = projectedPoints;
         }
@@ -475,7 +479,7 @@ namespace CFBpredictor
         /// Adds an opponent to the team's schedule
         /// </summary>
         /// <param name="team">the team to add to the schedule</param>
-        public void addOpponent(Team team)
+        public void AddOpponent(Team team)
         {
             schedule.Add(team);
         }
@@ -484,7 +488,7 @@ namespace CFBpredictor
         /// Gets the number of teams in the schedule
         /// </summary>
         /// <returns>the number of teams in the schedule</returns>
-        public int getScheduleSize()
+        public int GetScheduleSize()
         {
             return schedule.Count;
         }

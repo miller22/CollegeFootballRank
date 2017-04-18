@@ -14,22 +14,22 @@ namespace CFBpredictor
         public TeamForm(Team t)
         {
             InitializeComponent();
-            this.Text = t.getTeamName();
+            this.Text = t.GetTeamName();
             Image logo = null;
             try
             {
-                logo = Image.FromFile("C:/users/Danny/CFBpredictor/scores/Logos/" + t.getTeamName() + ".png");
+                logo = Image.FromFile("C:/users/Danny/CFBpredictor/scores/Logos/" + t.GetTeamName() + ".png");
             }
 
             catch { }
-            TRecord.Text = "(" + t.getWins() + "-" + t.getLosses() + ")";
+            TRecord.Text = "(" + t.GetWins() + "-" + t.GetLosses() + ")";
             TRating.Text = t.rating.ToString();
-            TRank.Text = t.getFBSRank().ToString();
-            Tppg.Text = t.getPPG().ToString();
-            Tpapg.Text = t.getDefensePPG().ToString();
-            Tppgvsavg.Text = t.getPPGvsOppAvg().ToString();
-            Tpavsavg.Text = t.getDefensePPGvsOppAvg().ToString();
-            Tsos.Text = t.getSOSRank().ToString();
+            TRank.Text = t.GetFBSRank().ToString();
+            Tppg.Text = t.GetPPG().ToString();
+            Tpapg.Text = t.GetDefensePPG().ToString();
+            Tppgvsavg.Text = t.GetPPGvsOppAvg().ToString();
+            Tpavsavg.Text = t.GetDefensePPGvsOppAvg().ToString();
+            Tsos.Text = t.GetSOSRank().ToString();
             if (logo != null)
             {
                 TeamLogo.Image = logo;

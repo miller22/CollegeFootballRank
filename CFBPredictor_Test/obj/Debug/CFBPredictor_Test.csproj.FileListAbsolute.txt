@@ -7,3 +7,16 @@ C:\Users\Danny\CFBPredictor_Test\bin\Debug\nunit.framework.xml
 C:\Users\Danny\CFBPredictor_Test\obj\Debug\CFBPredictor_Test.csprojResolveAssemblyReference.cache
 C:\Users\Danny\CFBPredictor_Test\obj\Debug\CFBPredictor_Test.dll
 C:\Users\Danny\CFBPredictor_Test\obj\Debug\CFBPredictor_Test.pdb
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\bin\Debug\CFBPredictor_Test.dll
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\bin\Debug\CFBPredictor_Test.pdb
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\bin\Debug\CFBpredictor.exe
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\bin\Debug\nunit.framework.dll
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\bin\Debug\CFBpredictor.pdb
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\bin\Debug\nunit.framework.xml
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\obj\Debug\CFBPredictor_Test.csprojResolveAssemblyReference.cache
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\obj\Debug\CFBPredictor_Test.dll
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\obj\Debug\CFBPredictor_Test.pdb
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\bin\Debug\Castle.Core.dll
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\bin\Debug\Moq.dll
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\bin\Debug\Castle.Core.xml
+C:\Users\Danny\CollegeFootballRank\CFBPredictor_Test\bin\Debug\Moq.xml
